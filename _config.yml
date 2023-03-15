@@ -1,0 +1,47 @@
+# Site settings
+title: Your Site Title
+description: Your site description
+url: https://your-site-url.com
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: [lanyon]
+
+# Exclude files and folders from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - LICENSE.md
+  - docs
+  - test
+
+# Jekyll plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      permalink: "/:title/"
+
+# Pagination settings
+paginate: 10
+paginate_path: "/page:num/"
+
+# Asset settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Development settings
+watch: true
